@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: aliceblue;
+}
+
+img {
+    width: 300px;
+}
+
+.lista-animes {
+    display: flex;
+}
+.anime {
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 5px 5px;
+}
