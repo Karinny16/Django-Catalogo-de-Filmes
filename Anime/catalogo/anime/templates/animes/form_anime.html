@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Anime</title>
+</head>
+
+<body>
+    <h1>{{form.instance.bk|yesno:"Editar Anime, Novo Anime"}}</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit">Salvar</button>
+    </form>
+    <a href="{% url 'lista_animes' %}">Voltar</a>
+</body>
+</html>
